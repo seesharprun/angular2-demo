@@ -1,0 +1,13 @@
+<h1>Demo App</h1>
+
+<div class="form-inline my-3">
+	<div class="form-group">
+		<label for="itemInput">New Item:</label>
+		<input type="text" class="form-control mx-1" id="itemInput" [(ngModel)]="newItem">
+	</div>
+	<button class="btn btn-primary" (click)="addNewItem()">Add</button>
+</div>
+
+<ul class="list-group">
+	<item *ngFor="let item of items" [text]="item"></item>
+</ul>
