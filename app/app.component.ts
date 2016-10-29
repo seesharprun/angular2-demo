@@ -9,7 +9,7 @@ import {ItemComponent} from './item.component';
   ]
 })
 export class AppComponent { 
-  newItem:string = "test";
+  newItem:string = "";
   items:string[] = [ "Item 1", "Item 2" ];
   addNewItem() {
     this.items.push(this.newItem);
